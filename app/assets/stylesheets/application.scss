@@ -1,0 +1,174 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+* {
+  box-sizing: border-box;
+}
+
+/* Navigation Menu and Hierarchy */
+
+header a.logo {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: url(https://farm2.staticflickr.com/1478/24259118481_3bd44aea82_o.png) no-repeat 0 0;
+  background-size: contain;
+  z-index: 1;
+  top: 15px;
+  left: 20px;
+}
+
+/* Little LRBP Logo */
+/* https://farm2.staticflickr.com/1504/23973828209_2812a148f8_o.png */
+
+nav {
+    font-family: 'Special Elite', cursive;
+    position: relative;
+    padding: 30px 0px 0px 180px;
+}
+
+nav.navbar-default {
+    background: -webkit-linear-gradient(black, transparent 100%), transparent;
+    border-color: transparent;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+nav ul li:hover > ul {
+    display: block
+}
+
+nav ul li a {
+    display: inline-block;
+
+    padding: 10px 20px;
+    text-decoration: none;
+    width: 220px;
+    color: white;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+
+}
+
+nav ul ul li {
+    position: relative;
+}
+
+nav ul ul ul {
+    left: 100%;
+    top: 0;
+}
+
+nav > ul {
+    padding-left: 35px;
+}
+
+nav > ul > li {
+    float: right;
+}
+
+nav > ul > li > a {
+    padding: 10px 20px 15px 20px;
+    width: auto;
+    color: white;
+}
+
+/* Body */
+
+section {
+  font-family: 'Special Elite', cursive;
+  width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  background-color: #020304;
+  height: 100vh;
+}
+
+.home-1 {
+  color: black;
+  min-height: 100%;
+  position: relative;
+  background: url(https://farm2.staticflickr.com/1586/24046047820_3731b6073d_k.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.home-3 {
+  color: black;
+  min-height: 100%;
+  position: relative;
+  background: url(https://farm2.staticflickr.com/1627/25093546841_009b4f02b9_o.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+h1 {
+  font-size: 3em;
+  display: block;
+  color: white;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #C3CAD9;
+}
+
+a {
+  font-weight: 700;
+  color: #373B44;
+  position: relative;
+
+  &:hover{
+    opacity: 0.8;
+  }
+
+  &:active {
+    top: 1px;
+  }
+}
+
+/* Footer */
+
+footer {
+  padding: 1% 5%;
+  text-align:center;
+  background-color: #020304;
+  color: white;
+
+  a {
+    color: #938172;
+    font-weight: 500;
+    text-decoration: none;
+  }
+}
