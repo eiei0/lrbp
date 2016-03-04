@@ -15,14 +15,26 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+
+  <!-- nav logo resize -->
   <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type="text/javascript">
+  $(document).on("scroll",function(){
+    if($(document).scrollTop()>100){
+      $("img").removeClass("large").addClass("small");
+    } else{
+      $("img").removeClass("small").addClass("large");
+    }
+  });
+  </script>
 
 </head>
-<body class=home-index>
+<body>
   <header>
     <!-- nav bar -->
     <nav class="navbar-default navbar-fixed-top">
-      <a id="header_nav" class="logo-large" href="<%= root_path %>"></a>
+      <img class="large" src="https://farm2.staticflickr.com/1478/24259118481_3bd44aea82_o.png"/>
+      <!-- <a class="large" id="header_nav" href="<%= root_path %>"></a> -->
       <ul>
         <li><a href="#">Members</a>
           <ul>

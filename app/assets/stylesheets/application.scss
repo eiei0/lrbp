@@ -7,26 +7,29 @@
 
 /* Navigation Menu and Hierarchy */
 
-header a.logo-large {
+img.large {
   position: absolute;
   width: 150px;
   height: 150px;
-  background: url(https://farm2.staticflickr.com/1478/24259118481_3bd44aea82_o.png) no-repeat 0 0;
-  background-size: contain;
   z-index: 1;
   top: 15px;
   left: 20px;
 }
 
-header a.logo-small {
+img.small {
   position: absolute;
-  width: 150px;
-  height: 150px;
-  background: url(https://farm2.staticflickr.com/1478/24259118481_3bd44aea82_o.png) no-repeat 0 0;
-  background-size: contain;
+  width: 69px;
+  height: 69px;
   z-index: 1;
   top: 15px;
   left: 20px;
+}
+
+header,nav, a, img, li{
+  transition: all 1s;
+  -moz-transition: all 1s; /* Firefox 4 */
+  -webkit-transition: all 1s; /* Safari and Chrome */
+  -o-transition: all 1s; /* Opera */
 }
 
 nav {
