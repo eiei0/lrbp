@@ -2,11 +2,20 @@
 <html>
 <head>
   <title>Little Rock Bike Polo</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="Jonathan MacDonald" content="">
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+
   <script
     src="http://maps.googleapis.com/maps/api/js">
   </script>
@@ -38,6 +47,8 @@
     }
     google.maps.event.addDomListener(window, 'load', initialize);
   </script>
+
+
 </head>
 <body class=home-index>
   <div id="fb-root"></div>
