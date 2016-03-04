@@ -7,7 +7,18 @@
 
 /* Navigation Menu and Hierarchy */
 
-header a.logo {
+header a.logo-large {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: url(https://farm2.staticflickr.com/1478/24259118481_3bd44aea82_o.png) no-repeat 0 0;
+  background-size: contain;
+  z-index: 1;
+  top: 15px;
+  left: 20px;
+}
+
+header a.logo-small {
   position: absolute;
   width: 150px;
   height: 150px;
@@ -92,7 +103,7 @@ section {
   height: 100vh;
 }
 
-.home-1 {
+.landing {
   color: black;
   min-height: 100%;
   position: relative;
@@ -102,14 +113,18 @@ section {
   background-size: cover;
 }
 
-.home-3 {
+.rules {
   color: black;
   min-height: 100%;
   position: relative;
-  background: url(https://farm2.staticflickr.com/1571/25463340026_1755d1b0a3_b.jpg);
+  background: url(https://farm2.staticflickr.com/1584/25122474349_2a311af479_h.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.about {
+  padding: 75px;
 }
 
 .content {
