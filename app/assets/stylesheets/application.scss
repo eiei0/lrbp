@@ -98,7 +98,7 @@ nav > ul > li > a {
 section {
   font-family: 'Special Elite', cursive;
   width: 100%;
-  padding: 0 7%;
+  padding: 13.5%;
   display: table;
   margin: 0;
   max-width: none;
@@ -128,6 +128,20 @@ section {
 
 .about {
   padding: 75px;
+}
+
+.map {
+  overflow:hidden;
+  height:500px;
+  width:1000px;
+}
+.gmap_canvas{
+  height:500px;
+  width:1000px;
+  img{
+    max-width:none!important;
+    background:none!important;
+  }
 }
 
 .content {
