@@ -98,7 +98,7 @@ nav > ul > li > a {
 section {
   font-family: 'Special Elite', cursive;
   width: 100%;
-  padding: 13.5%;
+  padding: 10%;
   display: table;
   margin: 0;
   max-width: none;
@@ -130,18 +130,18 @@ section {
   padding: 75px;
 }
 
-.map {
-  overflow:hidden;
-  height:500px;
-  width:1000px;
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
 }
-.gmap_canvas{
-  height:500px;
-  width:1000px;
-  img{
-    max-width:none!important;
-    background:none!important;
-  }
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 .content {

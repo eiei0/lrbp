@@ -16,37 +16,16 @@
 
 <section class="rules">
   <div class="content">
-    <h1>This is Richard. He is amazing and fast.</h1>
+    <h1>Rules.</h1>
  </div>
 </section>
 
-<section class="where">
-  <div class="map">
-    <div id='gmap_canvas' class="gmap_canvas">
+<section>
+  <div name="about" class="where">
+    <div class="map-responsive">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13114.394868007314!2d-92.28274551871611!3d34.74050800599649!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d2bb76197041b1%3A0x5ddb12cd603b6cd3!2s1065+McMath+Ave%2C+Little+Rock%2C+AR+72202!5e0!3m2!1sen!2sus!4v1457242756955" width="1000" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
   </div>
-  <script type='text/javascript'>
-    function init_map() {
-      var myOptions = {
-        zoom: 14,
-        center: new google.maps.LatLng(34.737456, -92.26349619999996),
-        mapTypeId: google.maps.MapTypeId.ROADMAP
-      };
-      map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-      marker = new google.maps.Marker({
-        map: map,
-        position: new google.maps.LatLng(34.737456, -92.26349619999996)
-      });
-      infowindow = new google.maps.InfoWindow({
-        content: '<strong>MacArthur Park Multipurpose Court</strong><br>1000 McMath Ave.<br> Little Rock, AR 72211<br>'
-      });
-      google.maps.event.addListener(marker, 'click', function() {
-        infowindow.open(map, marker);
-      });
-      infowindow.open(map, marker);
-    }
-    google.maps.event.addDomListener(window, 'load', init_map);
-  </script>
 </section>
 
 <footer>
