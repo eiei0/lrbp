@@ -124,12 +124,38 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  p {
+    color: white;
+  }
+
+  a {
+    color: white;
+    text-decoration: underline;
+  }
+
+  div {
+    color: white;
+    background-color: rgba(5,4,2,0.5);
+    width: 850px;
+    height: 100%;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 15px;
+  }
+
 }
 
 .about {
   padding: 75px;
 }
 
+.where {
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+}
 .map-responsive{
     overflow:hidden;
     padding-bottom:56.25%;

@@ -5,7 +5,7 @@
 $(document).ready(function() {
   $('a[href="#about"]').click(function(e) {
     e.preventDefault();
-    var targetOffset = $('div[name="about"]').offset().top;
+    var targetOffset = $('section[name="about"]').offset().top;
     $('body').animate({scrollTop: targetOffset}, 1000);
   });
 });
@@ -13,10 +13,20 @@ $(document).ready(function() {
 $(document).ready(function() {
   $('a[href="#where"]').click(function(e) {
     e.preventDefault();
-    var targetOffset = $('div[name="where"]').offset().top;
+    var targetOffset = $('section[name="where"]').offset().top;
     $('body').animate({scrollTop: targetOffset}, 1000);
   });
 });
+//// Rules Section
+$(document).ready(function() {
+  $('a[href="#rules"]').click(function(e) {
+    e.preventDefault();
+    var targetOffset = $('section[name="rules"]').offset().top;
+    $('body').animate({scrollTop: targetOffset}, 1000);
+  });
+});
+
+
 
 // Nav logo resize animation
 $(document).on("scroll",function(){
