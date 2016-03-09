@@ -28,11 +28,16 @@
       <img class="large" src="https://farm2.staticflickr.com/1478/24259118481_3bd44aea82_o.png"/>
       <!-- <a class="large" id="header_nav" href="<%= root_path %>"></a> -->
       <ul>
-        <!-- <li><a href="#">Members</a>
+        <li><a>Members</a>
           <ul>
-            <li><a href="#">Login</a></li>
+            <% if current_user %>
+              <li><%= link_to current_user.name, members_profile_path %></li>
+              <li><%= link_to "Sign Out", 'sign_out', method: :delete %></li>
+            <% else %>
+              <li><%= link_to "auth/facebook" do %><%= "Sign In" %><% end %></li>
+            <% end %>
           </ul>
-        </li> -->
+        </li>
         <li><a href="#">Blog</a></li>
         <li><a href="#where">Where We Play</a></li>
         <li><a href="#rules">Rules</a></li>
