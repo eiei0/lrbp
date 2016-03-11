@@ -9,11 +9,35 @@ $(document).on("scroll",function(){
   }
 });
 
-// Hidden menu from Squarespace
-// $(document).ready(function() {
-//   $('.markdown-block .sqs-block-content h3').css('cursor', 'pointer');
-//   $(".markdown-block .sqs-block-content h3").nextUntil("h3").slideToggle();
-//   $(".markdown-block .sqs-block-content h3").click(function() {
-//       $(this).nextUntil("h3").slideToggle();
-//   });
+// About section hidden text
+// .showtext1
+$(function() {
+    $('.showtext1')
+        .hide();
+});
+$(document).ready(function() {
+    $('#hidden1').click(function() {
+        $('.showtext1').slideToggle("slow");
+    });
+});
+// .showtext2
+$(function() {
+    $('.showtext2')
+        .hide();
+});
+$(document).ready(function() {
+    $('#hidden2').click(function() {
+        $('.showtext2').slideToggle("slow");
+    });
+});
+// .showtext3
+// $(function() {
+//     $('.showtext3')
+//         .hide();
 // });
+$(document).ready(function() {
+    $('#hidden3').click(function() {
+        $('.showtext3').slideToggle("slow");
+    });
+});
+

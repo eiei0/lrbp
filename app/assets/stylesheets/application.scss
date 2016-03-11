@@ -61,57 +61,6 @@ nav.navbar-default {
     background-color: transparent;
   }
 
-// nav ul {
-//     list-style: none;
-//     margin: 0;
-//     padding: 0;
-// }
-
-// nav ul::after {
-//     content: '';
-//     display: block;
-//     clear: both;
-// }
-
-// nav ul li:hover > ul {
-//     display: block
-// }
-
-// nav ul li a {
-//     display: inline-block;
-
-//     padding: 10px 20px;
-//     text-decoration: none;
-//     width: 220px;
-//     color: white;
-// }
-
-// nav ul li a:hover {
-//     text-decoration: underline;
-//     color: white;
-// }
-
-// nav ul ul {
-//     display: none;
-//     position: absolute;
-//     top: 100%;
-//     color: white;
-// }
-
-// nav > ul {
-//     padding-left: 35px;
-// }
-
-// nav > ul > li {
-//     float: right;
-// }
-
-// nav > ul > li > a {
-//     padding: 10px 20px 15px 20px;
-//     width: auto;
-//     color: white;
-// }
-
 // /* Body */
 
 section {
@@ -125,6 +74,7 @@ section {
   max-width: none;
   background-color: #020304;
   height: 100vh;
+  vertical-align: middle;
 }
 
 .landing {
@@ -146,7 +96,7 @@ section {
   background-position: center;
   background-size: cover;
 
-  p {
+  h2, ul, li, p {
     color: white;
   }
 
@@ -155,15 +105,9 @@ section {
     text-decoration: underline;
   }
 
-  // div {
-  //   color: white;
-  //   background-color: rgba(5,4,2,0.5);
-  //   width: 850px;
-  //   height: 100%;
-  //   margin-left:auto;
-  //   margin-right:auto;
-  //   padding: 15px;
-  // }
+  a:hover {
+    color: white;
+  }
 
 }
 
@@ -188,11 +132,6 @@ section {
     top:0;
     position:absolute;
 }
-
-// .content {
-//   display: table-cell;
-//   vertical-align: middle;
-// }
 
 // h1 {
 //   font-size: 3em;

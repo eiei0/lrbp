@@ -54,7 +54,7 @@
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Members<b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <% if current_user %>
+              <% if current_user %> <!-- facebook login -->
                 <li><%= link_to current_user.name, members_profile_path %></li>
                 <li><%= link_to "Sign Out", sign_out_path, method: :delete %></li>
               <% else %>
@@ -71,6 +71,7 @@
 
 <%= yield %>
 
+<!-- Footer -->
 <div id="footer">
   <div class="container">
     <div class="row">
