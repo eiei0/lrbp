@@ -1,4 +1,4 @@
-//= require jquery
+//= require main
 
 // Nav scroll animations - http://learnwebtutorials.com/jquery-tutorial-animate-scroll-to-anchor-link
 //// About section
