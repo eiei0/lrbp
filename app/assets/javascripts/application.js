@@ -1,33 +1,5 @@
 //= require main
 
-// Nav scroll animations - http://learnwebtutorials.com/jquery-tutorial-animate-scroll-to-anchor-link
-//// About section
-$(document).ready(function() {
-  $('a[href="#about"]').click(function(e) {
-    e.preventDefault();
-    var targetOffset = $('section[name="about"]').offset().top;
-    $('body').animate({scrollTop: targetOffset}, 1000);
-  });
-});
-//// Where We Play Section
-$(document).ready(function() {
-  $('a[href="#where"]').click(function(e) {
-    e.preventDefault();
-    var targetOffset = $('section[name="where"]').offset().top;
-    $('body').animate({scrollTop: targetOffset}, 1000);
-  });
-});
-//// Rules Section
-$(document).ready(function() {
-  $('a[href="#rules"]').click(function(e) {
-    e.preventDefault();
-    var targetOffset = $('section[name="rules"]').offset().top;
-    $('body').animate({scrollTop: targetOffset}, 1000);
-  });
-});
-
-
-
 // Nav logo resize animation
 $(document).on("scroll",function(){
   if($(document).scrollTop()>50){
@@ -36,3 +8,12 @@ $(document).on("scroll",function(){
     $("img").removeClass("small").addClass("large");
   }
 });
+
+// Hidden menu from Squarespace
+// $(document).ready(function() {
+//   $('.markdown-block .sqs-block-content h3').css('cursor', 'pointer');
+//   $(".markdown-block .sqs-block-content h3").nextUntil("h3").slideToggle();
+//   $(".markdown-block .sqs-block-content h3").click(function() {
+//       $(this).nextUntil("h3").slideToggle();
+//   });
+// });
