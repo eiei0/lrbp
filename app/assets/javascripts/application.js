@@ -9,37 +9,14 @@ $(document).on("scroll",function(){
   }
 });
 
-// About section hidden text
-// .showtext1
-// $(function() {
-//     $('.showtext1')
-//         .hide();
-// });
-// $(document).ready(function() {
-//     $('#hidden1').click(function() {
-//         $('.showtext1').slideToggle("slow");
-//     });
-// });
-// // .showtext2
-// $(function() {
-//     $('.showtext2')
-//         .hide();
-// });
-// $(document).ready(function() {
-//     $('#hidden2').click(function() {
-//         $('.showtext2').slideToggle("slow");
-//     });
-// });
-// // .showtext3
-// // $(function() {
-// //     $('.showtext3')
-// //         .hide();
-// // });
-
-$(document).ready(function(){
-  $("p").slideUp();
-  $("h3").click(function(){
-    $(this).next("p").slideToggle("slow");
-    $("p").not($(this).next("p")).slideUp();
+// About section toggle
+$(function() {
+    $('.accordion dd').filter(':nth-child(n+4)').hide();
+    $('.accordion dl').on('click', 'dt', function() {
+    $('.accordion dd').hide();
+    $(this).siblings("dt").find("span").text("+");
+    $(this).find("span").text("-");
+    $(this).next().slideDown("slow");
   });
 });
+
