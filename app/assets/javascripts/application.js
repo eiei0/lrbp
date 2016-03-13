@@ -11,33 +11,35 @@ $(document).on("scroll",function(){
 
 // About section hidden text
 // .showtext1
-$(function() {
-    $('.showtext1')
-        .hide();
-});
-$(document).ready(function() {
-    $('#hidden1').click(function() {
-        $('.showtext1').slideToggle("slow");
-    });
-});
-// .showtext2
-$(function() {
-    $('.showtext2')
-        .hide();
-});
-$(document).ready(function() {
-    $('#hidden2').click(function() {
-        $('.showtext2').slideToggle("slow");
-    });
-});
-// .showtext3
 // $(function() {
-//     $('.showtext3')
+//     $('.showtext1')
 //         .hide();
 // });
-$(document).ready(function() {
-    $('#hidden3').click(function() {
-        $('.showtext3').slideToggle("slow");
-    });
-});
+// $(document).ready(function() {
+//     $('#hidden1').click(function() {
+//         $('.showtext1').slideToggle("slow");
+//     });
+// });
+// // .showtext2
+// $(function() {
+//     $('.showtext2')
+//         .hide();
+// });
+// $(document).ready(function() {
+//     $('#hidden2').click(function() {
+//         $('.showtext2').slideToggle("slow");
+//     });
+// });
+// // .showtext3
+// // $(function() {
+// //     $('.showtext3')
+// //         .hide();
+// // });
 
+$(document).ready(function(){
+  $("p").slideUp();
+  $("h3").click(function(){
+    $(this).next("p").slideToggle("slow");
+    $("p").not($(this).next("p")).slideUp();
+  });
+});
