@@ -1,0 +1,166 @@
+/*
+
+
+*/
+/* line 7, /Users/jonathanmacdonald/code/lrbp/app/assets/stylesheets/application.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* Nav and Hierarchy */
+/* line 14, /Users/jonathanmacdonald/code/lrbp/app/assets/stylesheets/application.scss */
+img.large {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  z-index: 1;
+  top: 15px;
+  left: 20px;
+}
+
+/* line 23, /Users/jonathanmacdonald/code/lrbp/app/assets/stylesheets/application.scss */
+img.small {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  z-index: 1;
+  top: 15px;
+  left: 20px;
+}
+
+/* line 32, /Users/jonathanmacdonald/code/lrbp/app/assets/stylesheets/application.scss */
+nav, img, li {
+  transition: all 1s;
+  -moz-transition: all 1s;
+  /* Firefox 4 */
+  -webkit-transition: all 1s;
+  /* Safari and Chrome */
+  -o-transition: all 1s;
+  /* Opera */
+}
+
+/* line 39, /Users/jonathanmacdonald/code/lrbp/app/assets/stylesheets/application.scss */
+nav {
+  font-family: 'Special Elite', cursive;
+  position: relative;
+  padding: 30px 0px 0px 180px;
+  color: white;
+}
+
+/* line 46, /Users/jonathanmacdonald/code/lrbp/app/assets/stylesheets/application.scss */
+nav.navbar-default {
+  background: -webkit-linear-gradient(black, transparent 100%), transparent;
+  border-color: transparent;
+}
+
+/* line 52, /Users/jonathanmacdonald/code/lrbp/app/assets/stylesheets/application.scss */
+.nav.navbar-nav.navbar-right li a {
+  color: #fff;
+  background-color: transparent;
+}
+
+/* line 57, /Users/jonathanmacdonald/code/lrbp/app/assets/stylesheets/application.scss */
+.dropdown-menu {
+  background-color: transparent !important;
+}
+
+/* line 61, /Users/jonathanmacdonald/code/lrbp/app/assets/stylesheets/application.scss */
+.navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+/* line 67, /Users/jonathanmacdonald/code/lrbp/app/assets/stylesheets/application.scss */
+section {
+  font-family: 'Special Elite', cursive;
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+  padding: 10%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  background-color: #020304;
+  height: 100vh;
+  vertical-align: middle;
+}
+
+/* line 81, /Users/jonathanmacdonald/code/lrbp/app/assets/stylesheets/application.scss */
+.landing {
+  color: black;
+  min-height: 100%;
+  position: relative;
+  background: url(https://farm2.staticflickr.com/1586/24046047820_3731b6073d_k.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 91, /Users/jonathanmacdonald/code/lrbp/app/assets/stylesheets/application.scss */
+.rules {
+  color: black;
+  min-height: 100%;
+  position: relative;
+  background: url(https://farm2.staticflickr.com/1584/25122474349_2a311af479_h.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* line 100, /Users/jonathanmacdonald/code/lrbp/app/assets/stylesheets/application.scss */
+.rules h2, .rules ul, .rules li, .rules p {
+  color: white;
+}
+/* line 104, /Users/jonathanmacdonald/code/lrbp/app/assets/stylesheets/application.scss */
+.rules a {
+  color: white;
+  text-decoration: underline;
+}
+/* line 109, /Users/jonathanmacdonald/code/lrbp/app/assets/stylesheets/application.scss */
+.rules a:hover {
+  color: white;
+}
+
+/* line 115, /Users/jonathanmacdonald/code/lrbp/app/assets/stylesheets/application.scss */
+.about {
+  padding: 75px;
+}
+
+/* line 119, /Users/jonathanmacdonald/code/lrbp/app/assets/stylesheets/application.scss */
+.where {
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+/* line 125, /Users/jonathanmacdonald/code/lrbp/app/assets/stylesheets/application.scss */
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+/* line 131, /Users/jonathanmacdonald/code/lrbp/app/assets/stylesheets/application.scss */
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+}
+
+/* Footer */
+/* line 165, /Users/jonathanmacdonald/code/lrbp/app/assets/stylesheets/application.scss */
+#footer {
+  padding: 1% 5%;
+  text-align: center;
+  background-color: #020304;
+  color: white;
+}
+/* line 171, /Users/jonathanmacdonald/code/lrbp/app/assets/stylesheets/application.scss */
+#footer a {
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  padding: .25%;
+}
+@import url(base/bootstrap.css);
+@import url(base/normalize.css);
+@import url(base/scrolling-nav.css);
