@@ -3,6 +3,7 @@
 //= require base/bootstrap
 //= require base/jquery.easing.min.js
 //= require base/scrolling-nav
+//= require_tree .
 
 // Coffee
 //= require coffee/home
