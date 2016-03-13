@@ -50,16 +50,12 @@ nav.navbar-default {
   // Bootstrap overrides
   .nav.navbar-nav.navbar-right li a {
     color: #fff;
-  }
-
-  .navbar-default .navbar-nav .open .dropdown-menu>li>a,.navbar-default .navbar-nav .open .dropdown-menu {
-    background-color: transparent;
-    border-box: transparent;
-  }
-
-  .navbar-default .navbar-nav .open .dropdown-menu>li>a,.navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     background-color: transparent;
   }
+
+  .dropdown-menu {
+    background-color: transparent !important;
+}
 
 // /* Body */
 
