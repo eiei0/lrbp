@@ -1,5 +1,4 @@
 //= require main
-//= require base/bootstrap
 
 // Nav logo resize animation
 $(document).on("scroll",function(){
