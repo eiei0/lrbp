@@ -1,6 +1,6 @@
 // Base
-//= require base/jquery
 //= require base/bootstrap
+//= require base/jquery
 //= require base/jquery.easing.min.js
 //= require base/scrolling-nav
 //= require_tree .
