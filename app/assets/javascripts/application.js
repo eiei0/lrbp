@@ -1,4 +1,8 @@
-//= require main
+//= require jquery
+//= require jquery_ujs
+//= require turbolinks
+//= require_tree .
+
 
 // Nav logo resize animation
 $(document).on("scroll",function(){
