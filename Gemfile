@@ -11,6 +11,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 gem 'omniauth-facebook'
 gem 'figaro'
+gem 'dotenv-rails', '~> 2.0'
+gem "scrivito"
 
 group :production do
   gem 'pg'

@@ -21,3 +21,7 @@
 
 # Ignore omniauth keys
 /config/initializers/omniauth.rb
+
+# Ignore dotenv-rails files
+.env
+.env.production
